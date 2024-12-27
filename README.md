@@ -66,18 +66,22 @@ The frontend is built using **HTML, CSS, and Jinja** and consists of four pages:
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
     <img src="./assets/Screenshot_1.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 300px;"/>
 </div>
+
 2. **Home:** Displays general node and blockchain information.
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
     <img src="./assets/Screenshot_2.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 300px;"/>
 </div>
+
 3. **Wallet:** Shows balances for all nodes and the public key of the current user.
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
     <img src="./assets/Screenshot_3.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 300px;"/>
 </div>
+
 4. **View:** Lists transactions from the latest verified block.
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
     <img src="./assets/Screenshot_4.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 300px;"/>
 </div>
+
 5. **Send:** Facilitates the transfer of NBCs between nodes.
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
     <img src="./assets/Screenshot_5.jpg" alt="YCbCr Color Space Diagram" style="width: 500px; height: 300px;"/>
@@ -129,6 +133,7 @@ The frontend is built using **HTML, CSS, and Jinja** and consists of four pages:
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin: 0 auto;">
   <img src="./assets/Screenshot_6.jpg" alt="YCbCr Color Space Diagram" style="width: 700px; height: 400px;"/>
 </div>
+
 - **Impact of Difficulty:** Higher difficulty reduces performance:
   - Mean Block Time increases.
   - Throughput decreases due to the additional time required for mining.
