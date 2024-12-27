@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>View</title>
+<link rel="stylesheet" href="/static/style.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+
+<input type="checkbox" id="menu">
+<label for="menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+<div class="wrapper">
+<ul class="dummy">
+	<li class="dummy"><img class="dummy" src="/static/nbc_logo.png" alt="NBC Logo" width="500">
+	<li class="dummy"><a href="index">Home</a></li>
+	<li class="dummy"><a href="wallet">Wallet</a></li>
+  <li class="dummy"><a href="view">View</a></li>
+	<li class="dummy"><a href="send">Send NBC</a></li>
+</ul>
+</div>
+
+<div class="content view">
+
+<h1>Transactions in Last Block</h1>
+<br>
+<table>
+  <tr>
+    <th>Sender ID</th>
+    <th>Receiver ID</th>
+    <th>NBC</th>
+  </tr>
+  {% for sender_id, receiver_id, amount in transactions %}
+  <tr>
+    <td>{{ sender_id }}</td>
+    <td>{{ receiver_id }}</td>
+    <td>{{ amount }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-image: url("/static/bg.jpg");
+  background-size: 100% auto;
+}
+
+.wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #F07900;
+  clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+  transition: all 0.3s ease-in-out;
+}
+
+#menu:checked ~ .wrapper{
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.menu-btn{
+  position: absolute;
+  z-index: 2;
+  right: 20px;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  background: #F07900;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu:checked ~ .menu-btn{
+  color: #F07900;
+  background: #000000;
+}
+
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+.wrapper li{
+  margin-bottom: 15px;
+}
+
+.wrapper a{
+  display:block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 1000;
+  color: #000000;
+  background: #F07900;
+  transition: all 0.3s ease;
+}
+
+.wrapper a:hover{
+  margin-left: 60px;
+  margin-right: 60px;
+  border-radius: 10px;
+  background: #000000;
+  color: #F07900;
+  transition: all 0.3s ease;
+}
+
+#menu{
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: -1;
+  color: white;
+}
+
+.content.index {
+  margin-top: 5%;
+}
+
+.content.send {
+  margin-top: 15%;
+}
+
+.content table{
+  background-color: #252525;
+  border-radius: 20px;
+  border-spacing: 0;
+  table-layout: auto;
+  overflow:hidden;
+  border: 2px solid #ffffff;
+}
+
+.content th {
+  background-color: #F07900;
+  width: 200px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.content td {
+  background-color: #252525;
+  width: 200px;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.pubkey th, .pubkey td {
+  background-color: #252525;
+  border-radius: 20px;
+  width: 425px;
+  padding: 10px;
+  font-size: 22px;
+  word-break: break-all;
+}
+
+.content label {
+  font-size: 22px;
+  font-weight: 1000;
+}
+
+.content input {
+  width: 425px;
+  padding: 12px 20px;
+  background-color: #252525;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.content input[type=submit] {
+  font-size: 22px;
+  font-weight: 1000;
+  width: 475px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #F07900;
+  border-radius: 20px;
+  color: black;
+}
+
+.content input[type=submit]:hover {
+  background-color: #F8A145;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Home</title>
+<link rel="stylesheet" href="/static/style.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>
+
+<input type="checkbox" id="menu">
+<label for="menu" class="menu-btn"><i class="fas fa-bars"></i></label>
+<div class="wrapper">
+<ul class="dummy">
+	<li class="dummy"><img class="dummy" src="/static/nbc_logo.png" alt="NBC Logo" width="500">
+	<li class="dummy"><a href="index">Home</a></li>
+	<li class="dummy"><a href="wallet">Wallet</a></li>
+  <li class="dummy"><a href="view">View</a></li>
+	<li class="dummy"><a href="send">Send NBC</a></li>
+</ul>
+</div>
+
+<div class="content index">
+
+<h1>Node Information</h1>
+<br>
+<table>
+  <tr>
+    <td>ID Number</td>
+    <td>{{ node_id }}</td>
+  </tr>
+  <tr>
+    <td>IP Address</td>
+    <td>{{ node_ip }}</td>
+  </tr>
+  <tr>
+    <td>Port</td>
+    <td>{{ node_port }}</td>
+  </tr>
+</table>
+
+<br>
+<br>
+<br>
+
+<h1>Blockchain Information</h1>
+<br>
+<table>
+  <tr>
+    <td>Connected Nodes</td>
+    <td>{{ no_of_nodes }}</td>
+  </tr>
+  <tr>
+    <td>Block Capacity</td>
+    <td>{{ bc_capacity }}</td>
+  </tr>
+  <tr>
+    <td>Mine Difficulty</td>
+    <td>{{ bc_difficulty }}</td>
+  </tr>
+  <tr>
+    <td>Blockchain Length</td>
+    <td>{{ bc_length }}</td>
+  </tr>
+  <tr>
+    <td>Throughput <br> (Transaction/Sec)</td>
+    <td>{{ throughput }}</td>
+  </tr>
+  <tr>
+    <td>Block Time (Sec)</td>
+    <td>{{ block_time }}</td>
+  </tr>
+</table>
+
+</div>
+</body>
+</html>
